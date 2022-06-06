@@ -3,6 +3,13 @@
 // }
 // console.log("hello world")
 
-let number = null;
+// let number = null;
 
-console.log(number)
+// console.log(number)
+
+function my_func(){
+    console.log('hello')
+    return 'hello'
+}
+var x = my_func()
+console.log(x)

@@ -56,3 +56,19 @@ print('Hello world')
 - [ ] Run the file
 
 - [ ] NINJA BONUS: Spend a few minutes playing around with other string methods to see what’s out there!
+
+# lists and dictionaries
+
+
+- [list_dict.py](list_dict.py)
+
+# for loop basics assignment
+
+
+- [ ] Create a Python [file](for_loop_basics.py)
+- [ ] Basics
+- [ ] Multiples of Five
+- [ ] Counting, the Dojo Way
+- [ ] Whoa. That Sucker's Huge
+- [ ] Countdown by Fours
+- [ ] Flexible Counter

@@ -1,10 +1,9 @@
+# Flexible Counter - Set three variables: lowNum, highNum, mult. Starting at lowNum and going through highNum, print only the integers that are a multiple of mult. For example, if lowNum=2, highNum=9, and mult=3, the loop should print 3, 6, 9 (on successive lines)
 
-# for i in range(10):
-#     print(i)
+lowNum = 2
+highNum = 9
+mult = 3
 
-
-start = 0 # inclusive
-stop = 10 # exclusive
-step = 2
-for i in range(start, stop, step):
-    print(i)
+for i in range(lowNum,highNum + 1):
+    if(i % mult == 0):
+        print(i)

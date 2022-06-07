@@ -40,10 +40,11 @@ students = [
 
 def iterateDictionary(listParam):
     for student in listParam:
-        print(student)
+        print(f"first_name - {student['first_name']}, last_name - {student['last_name']}")
 
-iterateDictionary(students)
-iterateDictionary([{'name': 'Tyler', 'age': 39}])
+
+# iterateDictionary(students)
+# iterateDictionary([{'name': 'Tyler', 'age': 39}])
 # # should output: (it's okay if each key-value pair ends up on 2 separate lines;
 # # bonus to get them to appear exactly as below!)
 # first_name - Michael, last_name - Jordan
@@ -51,7 +52,43 @@ iterateDictionary([{'name': 'Tyler', 'age': 39}])
 # first_name - Mark, last_name - Guillen
 # first_name - KB, last_name - Tonel
 
-my_list = [0,1,2,3,4,5]
+# my_list = [0,1,2,3,4,5]
 
-for i in my_list:
-    print(i)
+# for i in my_list:
+#     print(i)
+
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo(param):
+    print(len(param['locations']), 'LOCATIONS')
+    for location in param['locations']:
+        print(location)
+    print()
+    print(len(param['instructors']), 'INSTRUCTORS')
+    for instructor in param['instructors']:
+        print(instructor)
+
+
+printInfo(dojo)
+# output:
+# 7 LOCATIONS
+# San Jose
+# Seattle
+# Dallas
+# Chicago
+# Tulsa
+# DC
+# Burbank
+    
+# 8 INSTRUCTORS
+# Michael
+# Amy
+# Eduardo
+# Josh
+# Graham
+# Patrick
+# Minh
+# Devon

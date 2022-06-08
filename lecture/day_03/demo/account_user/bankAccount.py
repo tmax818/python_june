@@ -34,8 +34,4 @@ class BankAccount:
             print(f"Interest Rage: {account.interest_rate}, Account balance: {account.balance}")
 
         
-acct1 = BankAccount(0.1, 1000)
-acct2 = BankAccount(0.1, 10000)
 
-acct1.deposit(1000).deposit(1000).deposit(1000).withdrawl(2000).yield_interest().display_account_info()
-acct2.deposit(1000).deposit(1000).withdrawl(200).withdrawl(200).withdrawl(200).withdrawl(200).yield_interest().display_account_info()

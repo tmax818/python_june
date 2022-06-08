@@ -10,7 +10,6 @@
 --
 # Abstraction
 
-- think of a bachelor <!-- .element: class="fragment" -->
 - abstraction is focus on essential quailites of an item <!-- .element: class="fragment" -->
 - form over substance <!-- .element: class="fragment" -->
 

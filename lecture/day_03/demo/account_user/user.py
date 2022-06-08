@@ -1,4 +1,4 @@
-
+from bankAccount import BankAccount
 
 class User:
 
@@ -12,3 +12,8 @@ class User:
 
     def display_user_balance(self):
         self.account.display_account_info()
+
+
+savings = BankAccount(.1, 10000)
+
+Alden = User("Alden", "ac@aol.com", savings)

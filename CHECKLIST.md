@@ -11,7 +11,7 @@ pipenv install flask
 ```
 pipenv shell
 ```
-- create [server.py](first_flask/server.py):
+- create [server.py](server.py):
 
 ```py
 from flask import Flask, render_template
@@ -26,11 +26,14 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-- start our webserver:
+- start webserver:
 
 ```bash
 python server.py
 ```
+
+- add [templates folder](templates/index.html) with all the html files you need for your application.
+
 
 - add route:
 
@@ -39,6 +42,4 @@ python server.py
 def about():
     return render_template('about.html')
 ```
-- add templates folder
 
-- inside templates folder, create html files

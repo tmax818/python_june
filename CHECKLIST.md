@@ -1,17 +1,18 @@
 # Flask Checklist
 
 - [ ] make a new directory
-- [ ] run command
+- [ ] move this document inside the new directory.
+- [ ] create virtual environment:
 
 ```bash
 pipenv install flask
 ```
-- [ ] activate virtual env
+- [ ] activate virtual environment:
 
 ```
 pipenv shell
 ```
-- create [server.py](server.py):
+- [ ] create [server.py](server.py):
 
 ```py
 from flask import Flask, render_template
@@ -26,16 +27,16 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-- start webserver:
+- [ ] start webserver:
 
 ```bash
 python server.py
 ```
 
-- add [templates folder](templates/index.html) with all the html files you need for your application.
+- [ ] add [templates](templates/index.html) folder with all the html files you need for your application.
 
 
-- add route:
+- [ ] add routes as needed:
 
 ```py
 @app.route('/about')

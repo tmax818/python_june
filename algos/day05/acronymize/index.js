@@ -10,7 +10,7 @@
 */
 
 
-const str1_arg = " there's no free lunch - gotta pay yer way. ";
+const str1_arg = "there's no free lunch - gotta pay yer way.";
 const expected1 = "TNFL-GPYW";
 
 const str2_arg = "Live from New York, it's Saturday Night!";
@@ -26,6 +26,15 @@ const expected2 = "LFNYISN";
 // const str1_arg = " there's no free lunch - gotta pay yer way. ";
 // const expected1 = "TNFL-GPYW";
 function acronymize(str_param) {
+  let new_str = ""
+  const arr = str_param.split(" ")
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i, arr[i][0])
+    new_str += arr[i][0]
+  }
+    console.log(new_str)
+    return new_str.toUpperCase()
+
 }
 
 console.log(acronymize(str1_arg))

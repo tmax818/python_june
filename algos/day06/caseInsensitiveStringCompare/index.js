@@ -26,7 +26,7 @@ const expected4 = true;
  */
 function caseInsensitiveStringCompare(strA, strB) {}
 
-console.log("func call", caseInsensitiveStringCompare(strA1, strB1))
+console.log("func call",caseInsensitiveStringCompare(strA1, strB1))
 console.log("func call",caseInsensitiveStringCompare(strA2, strB2))
 console.log("func call",caseInsensitiveStringCompare(strA3, strB3))
 console.log("func call",caseInsensitiveStringCompare(strA4, strB4))

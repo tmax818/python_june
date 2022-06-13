@@ -1,6 +1,6 @@
 # Assignments
 
-## practicd
+## practice
 
 - [ ] [Organizing Files (practice)](practice/organizing_files/README.md)
 - [ ] [testing Python (practice)](practice/testing_python/README.md)
@@ -10,7 +10,7 @@
 - [ ] [user (practice)](practice/user/README.md)
 - [ ] [chaining methods (practice)](practice/chaining_methods/README.md)
 - [ ] [dojo pets (practice)](practice/dojo_pets/README.md)
-- [ ] [understanding routing (practice)](practice/dojo_pets/README.md)
+- [ ] [understanding routing (practice)](practice/understand_routing/README.md)
 - [ ] [playground (practice)](practice/playground/README.md)
 - [ ] [great number game (practice)](practice/great_number_game/README.md)
 - [ ] [users (practice)](practice/users_erd/README.md)

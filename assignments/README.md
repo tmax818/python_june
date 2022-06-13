@@ -13,6 +13,10 @@
 - [ ] [understanding routing (practice)](practice/dojo_pets/README.md)
 - [ ] [playground (practice)](practice/playground/README.md)
 - [ ] [great number game (practice)](practice/great_number_game/README.md)
+- [ ] [users (practice)](practice/users_erd/README.md)
+- [ ] [friendships (practice)](practice/friendships_erd/README.md)
+- [ ] [users (practice)](practice/users_queries/README.md)
+- [ ] [books SQL (practice)](practice/books_sql/README.md)
 
 
 ## core
@@ -25,4 +29,8 @@
 - [ ] [html table (core)](core/html_table/README.md)
 - [ ] [counter (core)](core/counter/README.md)
 - [ ] [dojo survey (core)](core/dojo_survey/README.md)
+- [ ] [dojos and ninjas erd (core)](core/dojos_and_ninjas_erd/README.md)
+- [ ] [books_erd (core)](core/books_erd/README.md)
+- [ ] [dojos and ninjas queries(core)](core/dojos_and_ninjas_queries/README.md)
+- [ ] [mySQL countries(core)](core/countries/README.md)
 

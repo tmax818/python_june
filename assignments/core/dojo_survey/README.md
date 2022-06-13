@@ -1,6 +1,8 @@
 # dojo survey
 
-- [ ] Create a new [Flask application](survey_flask/server.py)
+![](survey-form.png)
+
+- [ ] Create a new [Flask application](survey_flask/CHECKLIST.md)
 - [ ] Have the root route ("/") show a page with the form
 - [ ] Have the "/result" route display the information from the form on a new HTML page
 - [ ] Put the form data into session

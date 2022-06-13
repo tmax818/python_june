@@ -24,7 +24,24 @@ const expected4 = true;
  * @param {string} strB
  * @returns {boolean} If the strings are equal or not.
  */
-function caseInsensitiveStringCompare(strA, strB) {}
+function caseInsensitiveStringCompare(strA, strB) {
+    if(strA.length !== strB.length){
+        return false
+    }
+    // if (strA.toLowerCase() === strB.toLowerCase()){
+    //     return true
+    // } else {
+    //     return false
+    // }
+    // return strA.toLowerCase() === strB.toLowerCase()
+    for(let i = 0; i < strA.length; i++){
+        if(strA[i].toLowerCase() !== strB[i].toLowerCase()){
+            return false
+        }
+    }
+    return true
+
+}
 
 console.log("func call",caseInsensitiveStringCompare(strA1, strB1))
 console.log("func call",caseInsensitiveStringCompare(strA2, strB2))

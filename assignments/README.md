@@ -17,6 +17,8 @@
 - [ ] [friendships (practice)](practice/friendships_erd/README.md)
 - [ ] [users (practice)](practice/users_queries/README.md)
 - [ ] [books SQL (practice)](practice/books_sql/README.md)
+- [ ] [users CR (practice)](practice/users_cr/README.md)
+- [ ] [users CRUD (practice)](practice/users_crud/README.md)
 
 
 ## core
@@ -33,4 +35,5 @@
 - [ ] [books_erd (core)](core/books_erd/README.md)
 - [ ] [dojos and ninjas queries(core)](core/dojos_and_ninjas_queries/README.md)
 - [ ] [mySQL countries(core)](core/countries/README.md)
+- [ ] [users CRUD Modularized (core)](core/users_crud_mod/README.md)
 

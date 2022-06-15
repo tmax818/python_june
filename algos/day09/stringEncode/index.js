@@ -13,9 +13,55 @@
   O output
   T talk
   */
-
+// a: 4
+// b: 2
+// c: 1
+// d: 3
+// var a = 4
+// var b = 2
+//0: 'tyler'
+//1: 39
+// 2: 555-67-9898
+// person = {'name': 'Tyler', 'age': 39}
+// object 
+"a4b2c1d3"
+const freqTable = {}
   const str1 = "aaaabbcddd";
+  // {a: 4, b:2, c:1, d:3}
+//   freqTable['a'] = 1
+//   freqTable['a']+=1
+//   freqTable['a']+=1
+//   freqTable['a']+=1
+//   freqTable['b'] = 1
+//   freqTable['b']+=1
+//   freqTable['c'] = 1
+//   freqTable['d'] = 1
+//   freqTable['d']+=1
+//   freqTable['d']+=1
+//  let newstr = ""
+//   for (const property in freqTable) {
+//     newstr += `${property}${freqTable[property]}`
+//   }
+//   console.log(newstr)
+
+//   console.log(freqTable)
   const expected1 = "a4b2c1d3";
+
+  function genFreqTable(str){
+    const freqTable = {}
+    // {b:1}
+    for(let i = 0; i < str.length; i++){
+        if(freqTable[str[i]]){
+            freqTable[str[i]] += 1
+        } else {
+          freqTable[str[i]] = 1
+        }
+    }
+    return freqTable
+
+  }
+ 
+console.log(genFreqTable(str1))
   const str2 = "";
   const expected2 = "";
   
@@ -37,7 +83,18 @@
    * "xx" => "xx"
    */
 
-  function encodeStr(str) {}
+  function encodeStr(str) {
+    const table = genFreqTable(str)
+     let newstr = ""
+  for (const property in table) {
+    newstr += `${property}${table[property]}`
+  }
+  console.log(newstr)
+  if(newstr.length >= str.length){
+    return str
+  }
+  return newstr
+  }
 
 console.log(encodeStr(str1) === expected1)
 console.log(encodeStr(str2) === expected2)

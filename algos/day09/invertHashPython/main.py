@@ -7,3 +7,17 @@
 
 dict1 = { 'name': 'Zaphod', 'charm': 'high', 'morals': 'dicey' }
 expected1 = { 'Zaphod': 'name', 'high': 'charm', 'dicey': 'morals'}
+
+dict2 = {'name': 'Adrian', 'age': 28}
+expected2 = {'Adrian': 'name'}
+
+def backwards(dictParam):
+    new_dict = {}
+    for i in dictParam.items():
+        new_dict[i[1]] = i[0]
+    print(new_dict)
+
+backwards(dict1)
+backwards(dict2)
+
+

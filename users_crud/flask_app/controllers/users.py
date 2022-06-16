@@ -26,9 +26,20 @@ def index():
     return render_template('index.html', users = users)
 
 # ! //////// UPDATE  //////////
-# ! POST that requires two routes
+# ! POST requires two routes
 
 @app.route('/user/edit/<int:id>')
 def edit_user(id):
     data ={'id': id}
     return render_template('edit_user.html', user = User.get_one(data))
+
+@app.route('/user/update', methods=['POST'])
+def update_user():
+    User.update(request.form)
+    return redirect('/')
+
+@app.route('/user/destroy/<int:id>')
+def destroy_user(id):
+    data = {'id': id}
+    User.destroy(data)
+    return redirect('/')

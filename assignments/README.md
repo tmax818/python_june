@@ -36,4 +36,7 @@
 - [ ] [dojos and ninjas queries(core)](core/dojos_and_ninjas_queries/README.md)
 - [ ] [mySQL countries(core)](core/countries/README.md)
 - [ ] [users CRUD Modularized (core)](core/users_crud_mod/README.md)
+- [ ] [dojos and ninjas (core)](core/dojos_and_ninjas/README.md)
+- [ ] [login and reg (core)](core/login_and_reg/README.md)
+- [ ] [recipes (core)](core/recipes/README.md)
 

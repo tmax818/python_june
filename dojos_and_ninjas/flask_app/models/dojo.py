@@ -18,12 +18,8 @@ class Dojo:
     @classmethod
     def get_all(cls):
         query = "SELECT * FROM dojos;"
-        # make sure to call the connectToMySQL function with the schema you are targeting.
         results = connectToMySQL(DATABASE).query_db(query)
-        # pprint(results)
-        # Create an empty list to append our instances of dojos
         dojos = []
-        # Iterate over the db results and create instances of dojos with cls.
         for dojo in results:
             dojos.append( Dojo(dojo) )
         return dojos
@@ -39,10 +35,10 @@ class Dojo:
     @classmethod
     def get_one_with_ninjas(cls,data):
         query = "SELECT * FROM dojos LEFT JOIN ninjas ON dojos.id = ninjas.dojo_id WHERE dojos.id = %(id)s;"
-        result = connectToMySQL(DATABASE).query_db(query, data)
-        pprint(result)
-        dojo = Dojo(result[0])
-        for item in result:
+        results = connectToMySQL(DATABASE).query_db(query, data)
+        pprint(results)
+        dojo = Dojo(results[0])
+        for item in results:
             ninja_dict = {
                 'id': item['ninjas.id'],
                 'first_name': item['first_name'],

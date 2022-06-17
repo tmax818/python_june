@@ -26,4 +26,21 @@ expected4 = False
 #    * @returns {boolean} Whether the given str is a palindrome or not.
 #    */
 def isPalindrome(str):
-    pass
+    newStr = ""
+    start = len(str) - 1
+    stop = -1
+    step = -1
+    for i in range(start,stop,step):
+        newStr += str[i]
+    
+    return str == newStr
+    
+    # strRev = str[::-1]
+    # return str == strRev
+
+print(isPalindrome(str1))
+print(isPalindrome(str2))
+print(isPalindrome(str3))
+print(isPalindrome(str4))
+
+

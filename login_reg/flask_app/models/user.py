@@ -59,23 +59,23 @@ class User:
         return connectToMySQL(DATABASE).query_db(query, data)
 
     @classmethod
-    def update(cls, data):
-        query = "UPDATE users SET name=%(name)s WHERE id = %(id)s;"
-        return connectToMySQL(DATABASE).query_db(query, data)
-
-    @classmethod
-    def destroy(cls, data):
-        query = "DELETE FROM users WHERE id = %(id)s;"
-        return connectToMySQL(DATABASE).query_db(query, data)
+    def get_by_email(cls, data):
+        query = "SELECT * FROM users WHERE email = %(email)s;"
+        result = connectToMySQL(DATABASE).query_db(query, data)
+        print(result)
+        if len(result) < 1:
+            return False
+        return User(result[0])
+        
 
     @staticmethod
     def validate_user(user):
         is_valid = True # we assume this is true
         if len(user['first_name']) < 3:
-            flash("Name must be at least 3 characters.")
+            flash("First name must be at least 3 characters.")
             is_valid = False
         if len(user['last_name']) < 3:
-            flash("Bun must be at least 3 characters.")
+            flash("Last name must be at least 3 characters.")
             is_valid = False
         if len(user['password']) < 8:
             flash("Password must be 8 chars.")
